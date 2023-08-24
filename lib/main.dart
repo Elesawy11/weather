@@ -11,7 +11,11 @@ class WeatherApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
+      
       theme: ThemeData(
+        fontFamily: 'Oswald',
+        colorSchemeSeed: Colors.black,
+        useMaterial3: true,
         brightness: Brightness.dark
         
       ),
