@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:weather_app_ui/views/search_view.dart';
 import 'package:weather_app_ui/views/widgets/custom_button.dart';
 
 class WeatherViewForm extends StatelessWidget {
@@ -61,20 +60,15 @@ class WeatherViewForm extends StatelessWidget {
                 fontSize: 18,
                 fontFamily: 'Oswald',
                 color: Colors.white.withOpacity(0.5)),
-          ),
-          const SizedBox(
+          ),const SizedBox(
             height: 100,
           ),
-          CustomButton(
+           CustomButton(
             onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(builder: (context) {
-                  return const SearchView();
-                }),
-              );
+              
             },
           ),
+          
         ],
       ),
     );
